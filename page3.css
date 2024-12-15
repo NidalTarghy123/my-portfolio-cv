@@ -1,0 +1,107 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background: url('image.jpg') no-repeat center center fixed; /* Image de fond */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color:#070004 ;
+    font-family: 'Cooper Black',serif;
+    font-size: 40px;
+}
+
+/* Grille pour les cases */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin-bottom: 30px;
+}
+
+/* Styles pour chaque case */
+.box {
+    background-color: #fff;
+    border: 2px solid #ff69b4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    min-height: 150px; /* Réduire la taille des cases */
+}
+
+/* Titre des cases */
+h2 {
+    color: #b30a5e;
+    font-family: 'forte', sans-serif;
+    font-size:25px;
+    margin-bottom: 15px;
+}
+
+/* Titres des sous-sections */
+h3 {
+    color: #3c3939;
+    font-size: 16px;
+}
+
+/* Styles pour les barres de progression */
+.progress {
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 8px;
+    margin-top: 5px;
+}
+
+.progress-bar {
+    background-color: #ff69ee;
+    height: 8px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.prev-button, .next-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff69b4;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid #ff69b4;
+    font-size: 16px;
+    text-align: center;
+}
+
+.prev-button:hover, .next-button:hover {
+    background-color: #ff3385;
+}
+
+/* Ajustements pour la grille */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr; /* Sur mobile, passer à deux colonnes */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr; /* Sur très petit écran, une seule colonne */
+    }
+}

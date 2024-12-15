@@ -1,0 +1,88 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background: url('image.jpg') no-repeat center center fixed; /* Image de fond */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #070004;
+    font-family: 'Cooper Black', serif;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+/* Grille pour les rectangles */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    grid-gap: 20px; /* Réduction de l'espace entre les rectangles */
+    justify-items: center;
+    margin-bottom: 20px; /* Réduction de l'espace en bas */
+    padding: 0 190px; /* Réduction du padding horizontal */
+}
+
+/* Styles pour les rectangles */
+.rectangle {
+    background-color: #fff;
+    border: 4px solid #ff69b4;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.rectangle h2 {
+    color: #b30a5e;
+    font-family: 'Forte', sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.rectangle p {
+    color: #3c3939;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.prev-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff69b4;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid #ff69b4;
+    font-size: 16px;
+}
+
+.prev-button:hover {
+    background-color: #ff3385;
+}
+
+/* Ajustements pour mobile */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
